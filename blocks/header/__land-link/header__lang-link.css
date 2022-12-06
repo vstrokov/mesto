@@ -1,0 +1,22 @@
+.header__lang-link {
+  margin-right: 18px;
+  justify-content: end;
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: white;
+}
+
+.header__lang-link:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .header__lang-link {
+font-size: 18px;
+line-height: 20px;
+  }
+}

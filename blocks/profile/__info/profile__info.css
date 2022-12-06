@@ -1,0 +1,7 @@
+.profile__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    border: 1px rgb(8, 254, 0) solid;
+}

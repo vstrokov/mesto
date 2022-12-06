@@ -1,0 +1,8 @@
+.header__lang-link_activ {
+  text-decoration: underline;
+}
+/*
+.header__lang-link_activ:nth-child(2) {
+  margin-right: 0px;
+  text-decoration: none;
+}*/

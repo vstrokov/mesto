@@ -1,0 +1,32 @@
+.element {
+    width: 282px;
+    height: 360px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-right: 16px;
+    margin-bottom: 20px;
+}
+
+.element:nth-child(3n+3) {
+    margin-right: 0px;
+}
+.element:nth-child(n+3){
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 320px) {
+    .element {
+margin-left: 19px;
+margin-right: 19px;
+margin-bottom: 20px;
+    }
+    .element:nth-child(3n+3) {
+        margin-left: 19px;
+        margin-right: 19px;
+    }
+    .element:nth-child(n+3){
+        margin-left: 19px;
+        margin-right: 19px;
+        margin-bottom: 20px;
+    }
+}
