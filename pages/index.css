@@ -22,6 +22,7 @@
 @import url(../blocks/elements/__element/_image/element__image.css);
 @import url(../blocks/elements/__element/_title/element__title.css);
 @import url(../blocks/elements/__element/_vector/element__vector.css);
+@import url(../blocks/elements/__element/__info/element__info.css);
 
 @import url(../blocks/intro/intro.css);
 @import url(../blocks/intro/__title/intro__title.css);
