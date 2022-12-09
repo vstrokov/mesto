@@ -8,4 +8,7 @@
     color: #000000;
     max-width: 190px;
     display: inline-block;
+    white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
 }

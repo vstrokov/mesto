@@ -4,6 +4,7 @@
     margin: 40px auto 50px;
     max-width: 880px;
     border: 1px red solid;
+    align-items: center;
 }
 @media screen and (max-width: 320px) {
     .profile {
