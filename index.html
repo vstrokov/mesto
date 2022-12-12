@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mesto</title>
   <link rel="stylesheet" href="./pages/index.css">
+  <script async src="./vendor/index.js"></script>
 
 </head>
 
@@ -21,11 +22,21 @@
           <div class="profile__avatar" alt="фото профиля"></div>
           <div class="profile__info">
             <div class="profile__name">
-            <h1 class="profile__title">Жак-Ив Кусто</h1><button scr="../../../../images/pen.svg" class="profile__edit-button"></button></div>
+            <h1 class="profile__title">Жак-Ив Кусто</h1>
+            <button class="profile__edit-button"></button></div>
             <h2 class="profile__subtitle">Исследователь океана</h2>
           </div>
                   </div>
         <button class="profile__add-button"></button>
+        <div class="popup__bg ">
+        <div class="popup popup_opened">
+          <div class="popup__p-title">Редактировать профиль</div>
+          <input class="p-inpname" type="text" placeholder="Кликуха">
+          <input class="p-inpname" type="text" placeholder="Движуха">
+          <button id="evaluate" class="subbutton">Сохранить</button>
+          <button class="popup__p-close"></button>
+        </div>
+        </div>
       </section>
       <section class="elements">
         <div class="element">
