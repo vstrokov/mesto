@@ -1,0 +1,20 @@
+.popup {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    height: 330px;
+    background-color: white;
+    justify-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Центрируем и масштабируем в 0 само окно*/
+    opacity: 0; 
+}
+
+@media screen and (max-width: 320px) {
+    .popup {
+        width: 282px;
+        height: 322px;
+    }
+}
