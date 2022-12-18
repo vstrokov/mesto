@@ -34,10 +34,12 @@ closePopupButton.addEventListener('click',() => { // Вешаем обработ
   popup.classList.remove('popup_opened'); // И с окна
 });
 
-function save(event) {
-  event.preventDefault();
+function save(e) {
+  e.preventDefault();
   PopupNameInput.textContent = nameInput.value;
   PopupJobInput.textContent = jobInput.value;
   closePopupButton();
+  console.log('1');
 }
-formElement.addEventListener('submit', save); 
+  formElement.addEventListener('submit', save); 
+$
