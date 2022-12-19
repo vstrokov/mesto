@@ -20,15 +20,15 @@ let popupNameInput = document.querySelector('.p-inpname');
 let popupJobInput = document.querySelector('.p-inpjob');
 let savePopupButton = document.querySelector('.subbutton');
 
-openPopupButtons.forEach((button) => { // Перебираем все кнопки
-  button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+//openPopupButtons ((button) => { // Перебираем все кнопки
+openPopupButtons.addEventListener('click',() => { // обработчик событий на клик
       e.preventDefault(); // Предотвращаем дефолтное поведение браузера
       popupBg.classList.add('popup__bgactive'); // Добавляем класс 'active' для фона
       popup.classList.add('popup_opened'); // И для самого окна
       popupNameInput.value = names.textContent;
       popupJobInput.value = job.textContent;
-  })
-});
+  });
+
 closePopupButton.addEventListener('click',() => { // Вешаем обработчик на крестик
   popupBg.classList.remove('popup__bgactive'); // Убираем активный класс с фона
   popup.classList.remove('popup_opened'); // И с окна
