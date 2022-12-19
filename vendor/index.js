@@ -12,21 +12,21 @@ let openPopupButtons = document.querySelectorAll('.profile__edit-button'); // К
 let closePopupButton = document.querySelector('.popup__p-close'); // Кнопка для скрытия окна
 
 // Находим форму в DOM
-let formElement = document.querySelector('.profile__info');// Воспользуйтесь методом querySelector()
+const formElement = document.querySelector('.popup');// Воспользуйтесь методом querySelector()
 // Находим поля формы в DOM
-let nameInput = document.querySelector('.profile__title');// Воспользуйтесь инструментом .querySelector()
-let jobInput = document.querySelector('.profile__subtitle');// Воспользуйтесь инструментом .querySelector()
-let PopupNameInput = document.querySelector('.p-inpname');
-let PopupJobInput = document.querySelector('.p-inpjob');
+let names = document.querySelector('.profile__title');// Воспользуйтесь инструментом .querySelector()
+let job = document.querySelector('.profile__subtitle');// Воспользуйтесь инструментом .querySelector()
+let popupNameInput = document.querySelector('.p-inpname');
+let popupJobInput = document.querySelector('.p-inpjob');
 let savePopupButton = document.querySelector('.subbutton');
 
 openPopupButtons.forEach((button) => { // Перебираем все кнопки
-  button.addEventListener('click', (open) => { // Для каждой вешаем обработчик событий на клик
-      open.preventDefault(); // Предотвращаем дефолтное поведение браузера
+  button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+      e.preventDefault(); // Предотвращаем дефолтное поведение браузера
       popupBg.classList.add('popup__bgactive'); // Добавляем класс 'active' для фона
       popup.classList.add('popup_opened'); // И для самого окна
-      PopupNameInput.value = nameInput.textContent;
-      PopupJobInput.value = jobInput.textContent;
+      popupNameInput.value = names.textContent;
+      popupJobInput.value = job.textContent;
   })
 });
 closePopupButton.addEventListener('click',() => { // Вешаем обработчик на крестик
@@ -34,10 +34,10 @@ closePopupButton.addEventListener('click',() => { // Вешаем обработ
   popup.classList.remove('popup_opened'); // И с окна
 });
 
-function save(event) {
-  event.preventDefault();
-  PopupNameInput.textContent = nameInput.value;
-  PopupJobInput.textContent = jobInput.value;
+function save(e) {
+  e.preventDefault();
+  popupNameInput.textContent = names.value;
+  popupJobInput.textContent = job.value;
   closePopupButton();
 }
 formElement.addEventListener('submit', save); 
